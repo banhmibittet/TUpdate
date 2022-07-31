@@ -1,0 +1,1374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="T-Profile.exe" version="1.0.0.13" publicKeyToken="f5b22cb36a2a31e3" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="T-Profile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="T-Profile.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AngleSharp.dll" size="879104">
+      <assemblyIdentity name="AngleSharp" version="0.16.1.0" publicKeyToken="E83494DCDC6D31EA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WLb+PDOlUuTlXeRUtQyIN4N3bS/YRw/9IWqb1RvHjAQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CsvHelper.dll" size="184320">
+      <assemblyIdentity name="CsvHelper" version="27.0.0.0" publicKeyToken="8C4959082BE5C823" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4Nl1QEMLgPKwjAVDVAOEgPUg8hpbDSwuyS+drMdi5mg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.World.dll" size="641536">
+      <assemblyIdentity name="Emgu.CV.World" version="3.4.3.3016" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LPjf7h2jcRUG+dRQluyvfkBhcHkZZSK7XYj0dh21IO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="168960">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.11.43.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dv7D8Hcea+od7Fc++MGq/SSw+L0tANxmdOMRMGY5BQ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="204800">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="1.3.3.11" publicKeyToken="1B03E6ACF1164F73" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wofpsHqCUYKPNZFDZMiaN9tgawwdZEV/nrj6Iljw3uM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KAutoHelper.dll" size="59904">
+      <assemblyIdentity name="KAutoHelper" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XZdgCOwJAJHyu4juX6Rfm0Y+BWjDyC1mblD2o7yAtms=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Bcl.AsyncInterfaces.dll" size="20856">
+      <assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" version="1.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1Q1HucXegtVjr/IIpgDaVlZNBVz+2XQhaF5UdSMNPnA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Bcl.HashCode.dll" size="22392">
+      <assemblyIdentity name="Microsoft.Bcl.HashCode" version="1.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K2AgMvJNX2WYvU6Vlj2gpP8If6pdzmfx9cs8yQAWcX4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Win32.Registry.dll" size="26496">
+      <assemblyIdentity name="Microsoft.Win32.Registry" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6anSgcGnCKquNm+C/WoXQvZdopGMxPpeqqraC+JCd9k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RingoLib.dll" size="40960">
+      <assemblyIdentity name="RingoLib" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uOLPNndFs+XzUqQZAHR6GIVHZf+fKOzlZt8LeA4OSJs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="20856">
+      <assemblyIdentity name="System.Buffers" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rMzPvkXZ8I/+7ZkW43sz6YxlvgEs//bn+ntnIQzh/vs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Memory.dll" size="148624">
+      <assemblyIdentity name="System.Memory" version="4.0.1.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Xcn0yNVXVMW9jUpLvnbbawlMAX9IcxZrDmKduNTLcjg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Numerics.Vectors.dll" size="115936">
+      <assemblyIdentity name="System.Numerics.Vectors" version="4.1.3.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oETXfttujbQFO/Z8xnHnaHwibBubCWOoHr41nOed/fc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="16768">
+      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PK3La4pzNRQcfDV6HXevH/SbWbhy30lPUCVYAZHRwNU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.AccessControl.dll" size="33672">
+      <assemblyIdentity name="System.Security.AccessControl" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H9pJHuvbGeoKg89sFqtd0AShv9/IRe3gF+vglFvrkn8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.Principal.Windows.dll" size="18312">
+      <assemblyIdentity name="System.Security.Principal.Windows" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tNjhWtwjXQ6Fjjm1Ez5dAKS6qMlPTznjteeRsPnAyAY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Text.Encoding.CodePages.dll" size="758664">
+      <assemblyIdentity name="System.Text.Encoding.CodePages" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>k9pqERI5o4BNou/WpvqpK/XL/jsrB5rTwEvmQxefQIg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Extensions.dll" size="33008">
+      <assemblyIdentity name="System.Threading.Tasks.Extensions" version="4.2.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LJytZBDjfkT6c8zLV29BgYTxrloKJX4WWhNr2qlBoMY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="T-Profile.exe" size="557008">
+      <assemblyIdentity name="T-Profile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uSXBTo9xE82Ysd4zgSj9Kz4yAN0km8YA9FIUQ9pNSi0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UndetectedChromeDriver.dll" size="17920">
+      <assemblyIdentity name="UndetectedChromeDriver" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u6mbcH31jgNt43lo6V9bI+fsetNmfOl7ymOcG2rRDUs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="7984640">
+      <assemblyIdentity name="WebDriver" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nx822HakgilwWlIB4V0IrlNEhA4WSDOZLHxt7/Yc/E0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.Support.dll" size="35328">
+      <assemblyIdentity name="WebDriver.Support" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>M6aYBd33mMDaBgsXN9Q3nmmEZ/C0JG6uSKScXzRQLJ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriverManager.dll" size="25600">
+      <assemblyIdentity name="WebDriverManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ecrZh0dqoSjfhyGwAPammE9tmIwwC7Z2k82XIMaSB+s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsInput.dll" size="22528">
+      <assemblyIdentity name="WindowsInput" version="1.0.4.0" publicKeyToken="9B287F7DC5073CAD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gRENRCVjl/DzxXKiDKlLtMZp5d6J+TSKutJj+9gcVLk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xNet.dll" size="113152">
+      <assemblyIdentity name="xNet" version="3.3.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3GrDdGnDEb/OXHiQj+p395+y4kGgsLl8sVoUQhK/C18=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="concrt140.dll" size="242496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R1lhVXFqpARTzbdV38OS5qofwLP5ktssXWlOW7Dn/BY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="cvextern.dll" size="26215424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>77peIaiznv3CvzDaHxibA3uGyiuzCokNja38AQTFK+w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ar\messages.json" size="15844">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V3LIV2ffQotpIAXF14VPg/O0uJGoiyR+iitq3IZhOU8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\bg\messages.json" size="14878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m870iCZIxJdRFkW+YUOyL1YbC+wrg6+u/EjNi8qNzzQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\bn\messages.json" size="21037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R/SCZ6Gj3FPyH22rYu0Osl9ejNooFtjLyxp55mbZA6w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ca\messages.json" size="14415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oYC/bYapezOCp566RvPApPmWHOH6roUAOHPh5drxkc0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\cs\messages.json" size="13851">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0OLzP+XcglRgaU85FbGGJY7qo3A6grWk2sUV7EaLW1s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\da\messages.json" size="13775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2slY9sYogAvPvZqoyWZii4RWUzdpd7VQR7N5mFB1di4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\de\messages.json" size="14490">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fwmZteJAZh4Ikab97ruyKZ7BM1JXZKAaUJRfEgLJeLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\el\messages.json" size="19166">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0Mx/NNDXMrk0Ed3tr+vz+98zBzAOTNkkSD6g75wouLA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\en\messages.json" size="13502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M0TddDbfLfz7nDjFS1lFfx+wwcDIxI6tklY6afBAWDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\es\messages.json" size="14649">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>juPGzWoeeAttGeFsrf4YYSzVJNukbxZ+hPUoj6pcaD8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\et\messages.json" size="13765">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZF/HTE5PLTKn7iBKti/f3+U9gmja0obVm8ss29PhVVI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\fa\messages.json" size="16947">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dn9Uf+V3db9q78FrLF1ZuPYN6D5PeHWawEaLLonYAQU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\fi\messages.json" size="13698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WC7kTNjn/4G0exKQre69arHeuF/QL3jTV7OGXhVZ6bc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\fr\messages.json" size="14725">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ysLxF2S8v8pr7hbZR7pse1J6SJ5d4f3LUkMnz/wL5i4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\fy\messages.json" size="14423">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eXNYjT7Cc28YHF1L7/REXXOFrbuJ6mlcLY3V4SeHobo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\he\messages.json" size="14582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QvxxGl33qfTjCvwRu90kzA4ReHTqe3tL8pS6xA/cOjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\hr\messages.json" size="13926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4mEGGuLdrJBKKKZWQMXOUU4PmWmXDEEue2D5keBcYuU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\hu\messages.json" size="14283">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qs1xoAEt5LeqFGLxmvHzRSkHCkHhii0iYyD4kRQMXk0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\id\messages.json" size="13836">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pVmzQkgj7Wz+wUYu1zEJSHskVR5Kfo5OUB2ePPYbmDY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\it\messages.json" size="14230">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BdXltcD+jAldfkFi9Wmyf1rRP8s014hpJpRszm+e1SI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ja\messages.json" size="15796">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g+apONd5Rdj/EcfubKYrGe/BswaL1pdmSHOvQnFy1t4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ko\messages.json" size="14677">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0ulPKstG9C97vJNohJiVgbh6uFxLlfEa7b7k0xUT0Xo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\nl\messages.json" size="14164">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>557+TyaVtn/Nguko68lXnibCBcJJ4Cq+iA1YReOIDvo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\no\messages.json" size="13740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GHDcda7g4ryEMDe+K5dl/ZIO2Ls6/rgH+gR5tWn/XDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\pl\messages.json" size="14334">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GLXWifQSkNb/YaHosOpz1qA4BSuo0l/ZseuCsIlWiV8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\pt\messages.json" size="14140">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UD34CtvIdj/7bSV0JnLicWjnQsVO1QKq9AQpr/QxIuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\pt_BR\messages.json" size="14239">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qWx5LL4EU7hyTQ6W+rYjxtg1uVQQXCqPzdXd0ygGEfI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ro\messages.json" size="14251">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KitZyu9ucQqVjCWCl//1q3e+6XlFWlTdMD+2iPz9+0g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\ru\messages.json" size="17540">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>blLdBNV77WFppwPfIehEOxxhF7vtgGb4FcomU+ht2Rs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\sq\messages.json" size="14735">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v+fZ1W5zEcuCy8RgIqDNsE8BJSqqsvTuVofRwvPvOog=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\sr\messages.json" size="15916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wQJ2FQjgP01uXJ/wryFoYgDUDgi/zFzJeiEWsrW+Rkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\sv\messages.json" size="13695">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x5d9caF40M4q81vWQhnOAEANzxWM8H8ZAJn5ySdHPJg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\th\messages.json" size="19547">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fJe3fUPPeU1iKjtMIYICW2saxWG9eerN2OPzFpB1AkY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\tr\messages.json" size="14248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>idTeqVL3EPJ+UxUik/QpK+e7peGWsVdfv3QduThHbXE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\uk\messages.json" size="17282">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i84ZMp1ebCBD5X/qdAEjQa6t+WABz/GKvUEjUCuj26g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\vi\messages.json" size="14618">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fPf6xLle0EFy/tp2YB4Q/tRzk9i/rKn1SYHCHyqDGrI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\zh_CN\messages.json" size="13279">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CEtfMwex+2OmljsVQpYdrzutlyGfH9/4zpVwuFJv6hE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\_locales\zh_TW\messages.json" size="13215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G49iqi7Oc//IUMifGwjfAO99lh7hHcXsZrI0cgXqPLM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\content.css" size="436">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ffi4yq1FbnjOPYxzm/AIxLvrcZOmnRv4SArvkqux8kk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\content.css.map" size="213">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ybbEHSms6xILU3nbr/bF5cAubYozOnErGu0Op6GeexQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\DroidSansMono.woff2" size="7568">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T7sNZ945dorSe5rOCLwroO/3z7ssW7tMcvQgn7XU1Ms=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\import.css" size="3691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>21+y14IsmqKn3ZuBWPWoTbMYJN/plTuUg6lHt2vWYCI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\import.css.map" size="997">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>B6+geR346MpKkBySLpeGGFfDLIlWhpELRZuKRFExcIg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\mocha.css" size="5596">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a4j/9d0TJl1bbNF1UC8zUh8pnur9RLQIyyaGAVtj8fM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\mocha.css.map" size="1426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gEIFz11/5ACvDhqRSyTyKp7fPo0S9GIPw4vID83oDf4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\popup.css" size="33383">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q0UMUz1Z3LudiNCoG3CsRiD2s0xslvifryIR2MEGIb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\css\popup.css.map" size="7819">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZynUF+aZii7xsJBNbAATtaHd4q98X+zCypP5R45NOjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\argon.js" size="76415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i2HzmxbcsYVD063LPyJVq7pZv7guYVZsVhPTEdksV8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\argon.js.map" size="201508">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gci2+AgF3+HwiuAfaXJgWOHlDXu+aKdqnfvO8jWrXmw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\background.js" size="1169454">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vlx+QdVmTcZFcM3GievkRM9UWC73Dt6OqUTpGWQesTY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\background.js.map" size="4475796">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E+Ftc9vq2ztc65TMkJo8mtCN+1aG9nv2Sgrl8F7bPvA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\content.js" size="48499">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ji77tWGQv+LkJ6Ybf9oUjyCTa3Ed3atK8B5UwUuwXY8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\content.js.map" size="61377">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O98iRH+oKaeR+O4zzq+Gu5IEOy1qsSPzfP8GUu/ywfU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\import.js" size="1233273">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gN7iclrAUXV2ajZv98Nvtje8rsxKJJt4OHhbRnXm6nE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\import.js.map" size="4847020">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vx4KJjW+uiZarriTKiXeCKEZ57hp0DmHfY2LMRRBlwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\options.js" size="78069">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k0cbB9rJ9xZLOlaTBrpFjm51ug7eO8WndchaW0qTNbY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\options.js.map" size="386311">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gbXCQyz6gakm9R5e2K5Tig9SMzfl0YDApQ6+f38dH+Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\popup.js" size="1247776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pbaikZIcQDBPBfrBW2UohwzKBTOTOq8XTMszRQ8hmsQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\popup.js.map" size="4845124">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>27W0oqGZjWzQCfXzSPJhap/Z8jTZUXM7g3Q+jD2hx4w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\qrdebug.js" size="1956">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GjK8LooOATTnYi+tFT9qWC+ygjcuMW1okbsYNHaM5zI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\dist\qrdebug.js.map" size="8269">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QPVpXdnixOvHpyZwdUzxMqyBYSN0MZCwH993i7XhAuM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon.svg" size="1965">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0RETqIiEDCYMX1eMrMA8tDUJfADrjjypm0hSzBdLKpg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon128.png" size="3024">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bmTxahrigz+S+6PPw1MbSU7oxYBeP17Ocke+Zt7Mhnk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon16.png" size="655">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yagQivGdEe4/+OA5Hrm7de21qCbuAJtO6efdw2+iPbc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon19.png" size="777">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8kIUz8CyPSp21fHyCIvH1jpuhF45neGN9R1gXHKdzIc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon38.png" size="1280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CxWboAyWGGOquuZhr+aum65yJx8RIe/kXV1hvWyqU2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\icon48.png" size="1541">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q5s1AduQ8cXfq7pI3F1P9jlShU4hq/QvGLuPqhsCups=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\images\scan.gif" size="32144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P5jiNdZL+A+QbOu8pRjMtXZgpzTRDUAHOVPS2JDJKg4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\LICENSE" size="1080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jLNB/KvQRknXZiEE1vlSyspWVYz0oZs0m2MuldPevHo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\manifest.json" size="2513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oSYOwl8mNTr230QRk6ApS8yGagNS1/OfZaa9QwnLLnc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\schema.json" size="2044">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iy2wKquXLm3Or3h9k9vMD/A0cEvFzNlExeQ5TRhVHwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\argon.html" size="138">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7E/dn/H0swhYnGnUVGSGJKJ04eWkpnxiw5sxNq7gFJ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\import.html" size="273">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>llq6aEjJkqSy8UURcyO4Ce2GstXgTOcgdCr2+P1+u8Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\licenses.html" size="186015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r2LbIcnTnLMDxh0FnH5RjGxnMQLLRMrz44BzBSz1p00=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\options.html" size="169">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QfnIu1BOnDMN6k1kCrV4Q0h4j8IYoCjubeazWc9aOno=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\popup.html" size="383">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rVo2TxmAW+7/NdOLXJZr6jP9c9bZo0xCVnkVAgQEHPM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\qrdebug.html" size="278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BFRGBJEr1uIrXU2aTWnF7jqUqCneT3jYWW7B4Nhc7ac=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\GoogleAuthen\view\test.html" size="342">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TjhtaOBTCFohSc8AMVKXiYRXt0IdG9jaIFnYokxobZQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\_metadata\computed_hashes.json" size="2335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SwofzpNPGuCdtNYVUhzLLswAaC0k9sduiq/BZe1w1wI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\_metadata\verified_contents.json" size="4292">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PCluEw2eHwuA4G7sB/a4crMGtA2aS9/8CVn86ULngsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\background.js" size="131">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>e9Sh1Yqbac5jSyEeVIfpfP1Jqaf+VgDj93ly50cY+Qk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\content_script\inject.js" size="1862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>anRZapx1Ja6umydFrm/LfuZP7n6Nk45+ix62xVPJMEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\content_script\page_context\media_devices.js" size="196">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EAO0OwdSJXF4LRw2Ep0mA9765FnojEwdRLsWn0h01lM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\content_script\page_context\support_detection.js" size="1222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+AQBUcyWWUFMubxgef31q8gbHuwegk/1PLqiN4bU04E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\128.png" size="7586">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UqV8lCvP4ipSj6InsXRelG0hSn1NnoSCZLFAnEM3m/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\16.png" size="723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VldHloQ7ZHXEUMHsrtHxhFNb85uXAxanhdWFDrexyrA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\32.png" size="1684">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4r+awbhVs4Vld4s65P+1M7BSdSIjxJi0psZOFmTI/a0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\48.png" size="2707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9tFgmCkkzuolyQczGWXFet0hYnoFQV0hjg01pZ85/u4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\64.png" size="3687">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bZvKrtrI5iWVwUIS1GAsAk/r3gyKV3SCAgEU0epBPjw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\disabled\16.png" size="739">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rGtRjVoIGqfVBm4WDJnZAiA1TfhwSNIQas4jnWrENQo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\disabled\32.png" size="1631">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hBaSp/zEC4xuA9i2gBOlyP78HudRo/RDwDZIy4PeVlo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\disabled\48.png" size="2564">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ybOmq7isb0UPTwgmwk8CT6Adoru+Lttd01s8T/u37ps=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\disabled\64.png" size="3355">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C2TfuIpKbTXzq/RJ5ANKbycLqL142zdYzMlFW6GRLug=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\enabled\16.png" size="765">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3QMqp7m4tYpidcaakLHCHThbW9Y/hOaVPpyQtZNAEp8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\enabled\32.png" size="1649">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LHEH6Uu/RQrLGJY4Tfdmr+4Kc1CsVpHojP9LHEbOSxg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\enabled\48.png" size="2605">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ocU08QUbYEJkZj/XDH+/rB2ClBf9vV6ll3bx5FFgdCA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\icons\enabled\64.png" size="3505">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RBiTkYZuFUxWo0EMkE/Iumg73Ie9Aef5lD+rXZc0IX8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\options\options.css" size="1619">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2k62IpCXVt96b6bh1Ak+js+3bUarwcBMBqkgKbUCB9g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\options\options.html" size="2339">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P2fA8wc2mf+eJS1JIu08v8vmgoi0IpvhW8r4m0Eep2M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\data\options\options.js" size="2107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PDVsbufvBBVyyu5kCfmHJAgO5QZ6592AF2cGFOSUJ3c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\lib\chrome.js" size="7876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>e16FNScGyCQ4QwDWoSYQhljT+W8iw5TkmAtrkQEwyyI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\lib\common.js" size="2488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GbSOAzDxw0eLnGFysLpqX1QdhH3zbnwgRlDyXJvLtCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\lib\config.js" size="1021">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZinEMbW0X6pH5L+yaixVLh0F7/tyUZZ2N0t/qq+uoFQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\lib\runtime.js" size="2384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SgBWKSW/s4/waKxw6BPhT7LhgjTjjdSwyYqMSsQC6qs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Extensions\WebRTC\manifest.json" size="1820">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4WujNtG/vFLjlboMuJyn33yIdbONlhbRGwNVmIQqiy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logo.ico" size="249278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FBj3b4Fn6RuiYVno9frvEBtr0+8ppmFX6nXCZb2oXLI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="msvcp140.dll" size="440120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M05prJNn9wjOYBpvSQ/yJ9bCBjbaUiLxSLJYMdIuE9Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opencv_ffmpeg341.dll" size="17123840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C2+/Yz9MQhLxytEFydMVNu6ai9JnwRi/wzxaKK6tf04=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opencv_ffmpeg343.dll" size="17124352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>whs1Y+60merB7qAueyHXiZ8aAITKoLETCeqAfxhfkjs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="T-Profile.exe.config" size="803">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b5/zYuAkpoF8NozALrNOqlcSb2+ZjdJrsoNJDizl1Sw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="vcruntime140.dll" size="83784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xAuwMZmiBU2r/HqOAdYJjpHecZNhnv+9DxQqe/AxwU0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=47C225EE55\BMRingo" issuerKeyHash="c143f5d59ba39f55f39b28e68305872f2cf1cbb3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hd63qVi9efXkwzydkmgVVrThCj2dgnexiWaSTkeeEw0=</DigestValue></Reference></SignedInfo><SignatureValue>NJH95+U/Mq7C1+l/LFRd/lQoi1smgfGhfIQ6SYkv78M5jUlQozUcdT4NVGYPuMiw9FtTvoAPJ2nn+azBQPcn12jauHzzyiC1ioXX91sg4YwmaDEU1XDb7e/r2jcUJeQrWFf1THjSB1F/i0/7tSpTNu6i3Xh5tH96X7DfhAe1emA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y5jETNnF0JGpyZ4rcAeqpoeIksZfpEcqpBd14V+4xxGeh030UjAkV22sLLUG6hSaFY93ADs7Lu2dMaqqA8/mlShzveiVuSdMDA4Fq8T9BUbZySyZw+OWvyn61Az4NuzL2NF1gSIPi+AaFJoFN+WssFIX4ppcw4FH392ln89qYt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0d139e474e926689b177829d3d0ae1b4561568929d3cc3e4f579bd58a9b7de85" Description="" Url=""><as:assemblyIdentity name="T-Profile.exe" version="1.0.0.13" publicKeyToken="f5b22cb36a2a31e3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=47C225EE55\BMRingo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9e6jMyZQVsmaIz9DkUCqLZw3Cvhsxtkp4CwLbijwERQ=</DigestValue></Reference></SignedInfo><SignatureValue>xL3ZU/frru+9OlXgmlCG3Zfb5007AguXVKEIq/sfyWJya08X1AE3QdsHPHdOKTMnKtYPVlEX+XNMZ/S0Js+qAH+vNwAR1ffRLWXSZ80c8m9/ojJRjYheHg9lWIgdqxwVy2NkrfW7TRRm9QtMC6rF2T7X5B+d4E53q0KGb6Tcxj8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y5jETNnF0JGpyZ4rcAeqpoeIksZfpEcqpBd14V+4xxGeh030UjAkV22sLLUG6hSaFY93ADs7Lu2dMaqqA8/mlShzveiVuSdMDA4Fq8T9BUbZySyZw+OWvyn61Az4NuzL2NF1gSIPi+AaFJoFN+WssFIX4ppcw4FH392ln89qYt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQNsfb4/DTuqVOlzsqXC6gDzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQANAA3AEMAMgAyADUARQBFADUANQBcAEIATQBSAGkAbgBnAG8wHhcNMjIwNjIyMTg1MDE0WhcNMjMwNjIzMDA1MDE0WjAvMS0wKwYDVQQDHiQANAA3AEMAMgAyADUARQBFADUANQBcAEIATQBSAGkAbgBnAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMuYxEzZxdCRqcmeK3AHqqaHiJLGX6RHKqQXdeFfuMcRnodN9FIwJFdtrCy1BuoUmhWPdwA7Oy7tnTGqqgPP5pUoc73olbknTAwOBavE/QVG2cksmcPjlr8p+tQM+Dbsy9jRdYEiD4vgGhSaBTflrLBSF+KaXMOBR9/dpZ/PamLdAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAmR2YP4EBAsUwYMdeWhSyzO3KDA2GfmE3RSPukVbZ2SHYkIjOlE87nvdSEtfAGgEn59q76RCY08zu7N0X58uiLJSjCmBge+KSrqy/1fO3ElSXPepEeMphy8En1W3ef0j92XYXtrzvw9qXwpJBao+GxwhvV05t+W+AkpgokrRiDCk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
